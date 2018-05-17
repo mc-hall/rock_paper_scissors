@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<script>
+
+		function computerPlay(){
+			let play = ['Rock','Paper','Scissors'];
+			let choice = play[Math.floor(Math.random()*play.length)];
+			return choice;
+		}
+
+		
+		function game(){for (let i=0; i<5; i++){
+			let games_total =[];
+			function readyPlayerOne(playerSelection, computerSelection){
+				if (playerSelection == 'rock' && computerSelection == 'scissors' ||
+					playerSelection == 'paper' && computerSelection == 'rock' || 
+					playerSelection == 'scissors' && computerSelection == 'paper'){
+					return `You win!, ${playerSelection} beats ${computerSelection}!`
+					}
+				else if(playerSelection === computerSelection){return "Its a tie!";}
+				else{return `You lose! ${computerSelection} beats ${playerSelection}`;}
+					}
+			games_total.push('Game: '+i);
+			const playerSelection = prompt('Enter: Rock,Paper,or Scissors').toLowerCase();
+			const computerSelection = computerPlay().toLowerCase();	
+			console.log(games_total.toString());
+			console.log(readyPlayerOne(playerSelection,computerSelection));		
+			
+				}
+			}
+
+
+game();
+
+
+
+
+
+
+	
+
+
+	</script>
+
+</body>
+
+</html>
+
