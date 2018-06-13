@@ -2,52 +2,47 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="rps.css">
+	
 </head>
 <body>
-	<script>
-
-		function computerPlay(){
-			let play = ['Rock','Paper','Scissors'];
-			let choice = play[Math.floor(Math.random()*play.length)];
-			return choice;
-		}
-
-		
-		function game(){for (let i=0; i<5; i++){
-			let games_total =[];
-			function readyPlayerOne(playerSelection, computerSelection){
-				if (playerSelection == 'rock' && computerSelection == 'scissors' ||
-					playerSelection == 'paper' && computerSelection == 'rock' || 
-					playerSelection == 'scissors' && computerSelection == 'paper'){
-					return `You win!, ${playerSelection} beats ${computerSelection}!`
-					}
-				else if(playerSelection === computerSelection){return "Its a tie!";}
-				else{return `You lose! ${computerSelection} beats ${playerSelection}`;}
-					}
-			games_total.push('Game: '+i);
-			const playerSelection = prompt('Enter: Rock,Paper,or Scissors').toLowerCase();
-			const computerSelection = computerPlay().toLowerCase();	
-			console.log(games_total.toString());
-			console.log(readyPlayerOne(playerSelection,computerSelection));		
-			
-				}
-			}
-
-
-game();
-
-
-
-
-
-
+	<div class="page_title_text">
+		<h1> Let's Rock, Paper, Scissors!</h1>
+	</div>
 	
+	<div class="Instructions">
+		<h3 id="instructions">Click a choice below to start playing!</h3>
+	</div>
+	<div class='flex-container'>
+		<div class='button_container'>
+			<button class="buttons" id="rock">Rock</button>
+			<button class="buttons" id="paper">Paper</button>
+			<button class="buttons" id="scissors">Scissors</button>
+		</div>
+	</div>
+	<div class="score_board">
+		<span id="you_player">Your Score</span>
+		<span id="player_score"></span>
+		:
+		<span id="computer_score"></span>
+		<span id="cpu_player">Computer Score</span>
+	</div>
+	<h3 id="score_limit">The first to reach 5 wins!</h3>
+	<div class="show_chosen">
+		<span id="chosen"></span>
+	</div>
+	<div class="rounds_played">
+		<span id="rounds_complete"></span>
+	</div>
+
+	<div class="reset_button">
+		<button id="reset">Reset</button>
+	</div>
 
 
-	</script>
-
+<script type="text/javascript" src="rps.js"></script>
 </body>
-
 </html>
+
+
 

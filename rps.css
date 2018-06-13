@@ -1,0 +1,179 @@
+body {
+background-color:#ffebb3 ;
+height:500px;
+display: center;
+}
+
+.page_title_text{
+	color: #997000;
+	font-family: Verdana;
+	padding: 10px;
+	text-align: center;
+	background-color: #fff8e6;
+	border-radius: 10px;
+	display: center;
+}
+
+#instructions{
+	text-align: center;
+	margin: auto;
+	color:#997000;
+	font-family: Verdana;
+}
+
+#score_limit{
+	text-align: center;
+	color: #997000;
+	font-family: Verdana;
+}
+
+.score_board{
+	display: center;
+	margin: auto;
+	border-radius: 5px;	
+	height: 130px;
+	width:500px;
+	background-color: #cc9900;
+	border-style: solid;
+	border-color: #4d3900;
+	color: white;
+	text-align: center;
+}
+
+.show_chosen{
+	display: center;
+	text-align: center;
+	
+}
+
+.rounds_played{
+	display: center;
+	text-align: center;
+}
+
+
+#you_player{
+	margin-right: 10px;
+	color:#ffebb3;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#player_score{
+	margin: auto;
+	color:#ffebb3;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#cpu_player{
+	margin-left: 10px;
+	color:#ffebb3;
+	font-family: Verdana;
+	font-weight: bold;
+}
+#computer_score{
+	margin: auto;
+	color:#ffebb3;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#rounds_complete{
+	color: #997000;
+	font-family: Verdana;
+	font-weight:bold;
+}
+
+#games{
+	margin-top: 10px;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.reset_button{
+	margin-top:100px;
+}
+
+#chosen{
+	color: #997000;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#reset{
+	display: block;
+	margin:auto;
+	border-radius: 5px;	
+	height: 30px;
+	width: 70px;
+	background-color: #cc9900;
+	opacity: .8;
+	color: white;
+}
+
+#reset:hover{
+	background-color: #3411C0;
+	opacity: 1;
+	transform: scale(1.8);
+	transition: .5s ease;
+	margin-bottom: 5px;
+}
+
+#rock{
+	margin:30px;
+	border-radius: 5px;	
+	height: 30px;
+	width: 70px;
+	background-color: #cc9900;
+	opacity: .8;
+	color: white;
+}
+#rock:hover{
+	background-color: #3411C0;
+	opacity: 1;
+	transform: scale(1.8);
+	transition: .5s ease;
+	margin-bottom: 5px;
+
+}
+
+#paper{
+	margin:30px;
+	border-radius: 5px;	
+	height: 30px;
+	width: 70px;
+	background-color: #cc9900;
+	opacity: .8;
+	color: white;
+}
+#paper:hover{
+	background-color: #3411C0;
+	opacity: 1;
+	transform: scale(1.8);
+	transition: .5s ease;
+	margin-bottom: 5px;
+}
+
+
+#scissors{
+	margin:30px;
+	border-radius: 5px;	
+	height: 30px;
+	width: 70px;
+	background-color: #cc9900;
+	opacity: .8;
+	color: white;
+}
+#scissors:hover{
+	background-color: #3411C0;
+	opacity: 1;
+	transform: scale(1.8);
+	transition: .5s ease;
+	margin-bottom: 5px;
+}
+
